@@ -1,15 +1,13 @@
-def FizzBuzz (number)
-  if number % 3 == 0 && number % 5 == 0 
-  puts "FizzBuzz"
-  
+def fizzbuzzuzz(number)
+if number % 3 == 0 && number % 5 == 0 
+   return "FizzBuzz"
 elsif number % 3 == 0
-  puts "Fizz"
-  
+  return "Fizz"
 elsif number % 5 == 0
- puts "Buzz"
-# elsif number % 15 == 0
-#      return "FizzBuzzuzz"
+  return "Buzz"
+else
+  return nil
  end
 end
-puts fizzbuzz(15)
+puts fizzbuzz(30)
 puts fizzbuzz(3)
